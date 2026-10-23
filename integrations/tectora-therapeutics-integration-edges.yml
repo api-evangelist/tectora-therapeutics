@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/tectora-therapeutics/integrations
+- https://n8n.io/integrations/tectora-therapeutics/
+- https://composio.dev/toolkits/tectora-therapeutics
+- https://monid.ai/tools/tectora-therapeutics
+checked:
+- https://composio.dev/toolkits/tectora-therapeutics
+- https://monid.ai/tools/tectora-therapeutics
+- https://n8n.io/integrations/tectora-therapeutics/
+- https://zapier.com/apps/tectora-therapeutics/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

@@ -1,25 +1,68 @@
 aid: tectora-therapeutics
+
 name: Tectora Therapeutics
-description: 'Tectora Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  vc-portfolio; backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://tectoratx.com/og-image.png
+
+description: 'Tectora Therapeutics is a biotechnology company focused on developing innovative gene‑editing therapies for rare genetic diseases. Leveraging proprietary CRISPR‑based platforms, the firm aims to deliver precise, durable treatments that address the underlying causes of conditions such as Duchenne muscular dystrophy and cystic fibrosis. The company collaborates with leading academic institutions and pharmaceutical partners to advance its pipeline through pre‑clinical and early clinical stages, emphasizing safety, efficacy, and regulatory compliance. Tectora Therapeutics is headquartered in Austin, Texas, and is backed by venture capital investors including NEA.'
+
 url: https://raw.githubusercontent.com/api-evangelist/tectora-therapeutics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- Gene Editing
+- Rare Diseases
+- Therapeutics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- nea
+
 common:
+- type: Hosts
+  url: hosts/tectora-therapeutics-hosts.yml
+- type: Vendors
+  url: vendors/tectora-therapeutics-vendors.yml
+- type: DomainSecurity
+  url: security/tectora-therapeutics-domain-security.yml
 - type: Website
   url: https://tectoratx.com/
+
+apis: []
+
+x-backed-by:
+- nea
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://tectoratx.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
